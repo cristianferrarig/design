@@ -1,0 +1,59 @@
+-# BRAND
+
+-# Note    | The "-precomposed" suffix is for prevent effects on older versions of iOS
+-# 180x180 | iPad and iPad mini (with @2× display) iOS ≥ 8
+-# 152x152 | iPad 3+ (with @2× display) iOS ≥ 7
+-# 144x144 | iPad (with @2× display) iOS ≤ 6
+-# 120x120 | iPhone (with @2× and @3 display) iOS ≥ 7
+-# 114x114 | iPhone (with @2× display) iOS ≤ 6
+-# 76x76   | iPad mini and the first- and second-generation iPad (@1× display) on iOS ≥ 7
+-# 72x72   | iPad mini and the first- and second-generation iPad (@1× display) on iOS ≤ 6
+-# 57x57   | Android Stock Browser and non-Retina iPhone and iPod Touch
+%link{ rel: "apple-touch-icon-precomposed", sizes: "180x180", href: "touch/apple-touch-icon-180x180-precomposed.png" }
+%link{ rel: "apple-touch-icon-precomposed", sizes: "152x152", href: "touch/apple-touch-icon-152x152-precomposed.png" }
+%link{ rel: "apple-touch-icon-precomposed", sizes: "144x144", href: "touch/apple-touch-icon-144x144-precomposed.png" }
+%link{ rel: "apple-touch-icon-precomposed", sizes: "120x120", href: "touch/apple-touch-icon-120x120-precomposed.png" }
+%link{ rel: "apple-touch-icon-precomposed", sizes: "114x114", href: "touch/apple-touch-icon-114x114-precomposed.png" }
+%link{ rel: "apple-touch-icon-precomposed", sizes: "76x76",   href: "touch/apple-touch-icon-76x76-precomposed.png" }
+%link{ rel: "apple-touch-icon-precomposed", sizes: "72x72",   href: "touch/apple-touch-icon-72x72-precomposed.png" }
+%link{ rel: "apple-touch-icon-precomposed", href: "touch/apple-touch-icon-57x57-precomposed.png" }
+-# Fallback for everything else (Nokia devices)
+%link{ rel: "shortcut icon", href: "touch/apple-touch-icon.png" }
+
+%link{ rel: "shortcut icon", sizes: "16x16", href: "images/favicon.ico" }
+%link{ rel: "shortcut icon", sizes: "32x32", href: "images/favicon@2x.png" }
+
+-# Chrome 31+ has home screen icon 192×192 (the recommended size for multiple resolutions).
+-# If it’s not defined on that size it will take 128×128.
+%link{ rel: "icon", sizes: "192x192", href: "touch/touch-icon-192x192.png" }
+%link{ rel: "icon", sizes: "128x128", href: "touch/touch-icon-128x128.png" }
+
+-# Android Tab Color
+%meta{ name: "theme-color", content: "#232C39" }
+
+-# Tile icon for Win8 (144x144 + tile color)
+%meta{ name: "msapplication-TileImage", content: "touch/apple-touch-icon-144x144-precomposed.png" }
+%meta{ name: "msapplication-TileColor", content: "#222222" }
+
+
+-# STARTUP IMAGES
+-# 1536x2008 | iPad retina portrait startup image
+-# 1496x2048 | iPad retina landscape startup image
+-# 768x1004  | iPad non-retina portrait startup image
+-# 748x1024  | iPad non-retina landscape startup image
+-# 1242x2148 | iPhone 6 Plus portrait startup image
+-# 1182x2208 | iPhone 6 Plus landscape startup image
+-# 750x1294  | iPhone 6 startup image
+-# 640x1096  | iPhone 5 startup image
+-# 640x920   | iPhone < 5 retina startup image
+-# 320x460   | iPhone < 5 non-retina startup image
+%link{ rel: "apple-touch-startup-image", href: "apple-touch-startup-image-1536x2008.png", media: "(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" }
+%link{ rel: "apple-touch-startup-image", href: "apple-touch-startup-image-1496x2048.png", media: "(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" }
+%link{ rel: "apple-touch-startup-image", href: "apple-touch-startup-image-768x1004.png",  media: "(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 1) and (orientation: portrait)" }
+%link{ rel: "apple-touch-startup-image", href: "apple-touch-startup-image-748x1024.png",  media: "(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 1) and (orientation: landscape)" }
+%link{ rel: "apple-touch-startup-image", href: "apple-touch-startup-image-1242x2148.png", media: "(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" }
+%link{ rel: "apple-touch-startup-image", href: "apple-touch-startup-image-1182x2208.png", media: "(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" }
+%link{ rel: "apple-touch-startup-image", href: "apple-touch-startup-image-750x1294.png",  media: "(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" }
+%link{ rel: "apple-touch-startup-image", href: "apple-touch-startup-image-640x1096.png",  media: "(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" }
+%link{ rel: "apple-touch-startup-image", href: "apple-touch-startup-image-640x920.png",   media: "(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" }
+%link{ rel: "apple-touch-startup-image", href: "apple-touch-startup-image-320x460.png",   media: "(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" }

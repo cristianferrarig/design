@@ -1,0 +1,16 @@
+title:       " | SoSafe"
+
+description: "Digital Product Designer"
+keywords:    "product, strategy, user experience, interface, design, brand, identity, front-end"
+author:      "Cristian Ferrari"
+
+analytics:   "UA-XXXXX-X"
+tagmanager:  "GTM-54MVWR"
+
+handheld_friendly: "True"
+mobile_optimized:  "320"
+
+# For iOS web apps.
+app_title:   "Cristian"
+app_capable: "yes"
+bar_style:   "black"

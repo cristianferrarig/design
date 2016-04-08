@@ -1,0 +1,26 @@
+!!!
+%html
+  %head
+    = partial "meta/base"
+    -# partial "meta/social"
+    = partial "meta/mobile"
+    -# partial "meta/brand"
+    = partial "meta/tricks"
+
+    %title= "#{current_page.data.title}" + data.config.title
+
+    = stylesheet_link_tag "application"
+    = stylesheet_link_tag  "hashgrid" if not build?
+
+    = partial "utils/oldie"
+
+  %body{ class: "#{page_classes}" }
+
+    = partial "utils/analytics" if build?
+
+    = yield
+
+    -# Placed at the end of the document so the pages load faster
+    %script{ src: "http://maps.googleapis.com/maps/api/js" }
+    = javascript_include_tag  "application"
+    = javascript_include_tag  "hashgrid" if not build?
