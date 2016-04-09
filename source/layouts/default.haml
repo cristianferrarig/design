@@ -1,8 +1,10 @@
 = wrap_layout :layout do
 
-  = partial "global/header"
+  .container
 
-  %main
-    = yield
+    = partial "global/header"
 
-  = partial "global/footer"
+    %main
+      = yield
+
+    = partial "global/footer"

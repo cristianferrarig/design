@@ -1,11 +1,26 @@
 activate :autoprefixer
 activate :directory_indexes
-activate :syntax, :line_numbers => true
+
+# activate :syntax, line_numbers: true
+
+activate :syntax do |syntax|
+  syntax.css_class     = "code-highlight"
+  syntax.line_numbers  = true
+end
+
+# activate :syntax,
+#   css_class:     "sss",
+#   line_numbers:  true,
+#   start_line:    1,
+#   inline_theme:  nil,
+#   wrap:          true,
+#   lexer_options: {}
 
 after_configuration do
   sprockets.append_path "#{root}/vendor/bower"
-  sprockets.append_path "#{root}/vendor/toolkit/assets/stylesheets"
-  sprockets.append_path "#{root}/vendor/toolkit/assets/javascripts"
+  sprockets.append_path "#{root}/vendor/basekit/tools/stylesheets"
+  sprockets.append_path "#{root}/vendor/basekit/assets/stylesheets"
+  sprockets.append_path "#{root}/vendor/basekit/assets/javascripts"
 # sprockets.import_asset 'jquery'
 # sprockets.import_asset 'hashgrid'
 end
@@ -49,6 +64,6 @@ configure :build do
 end
 
 activate :deploy do |deploy|
-  deploy.method = :git
+  deploy.method       = :git
   deploy.build_before = true
 end
