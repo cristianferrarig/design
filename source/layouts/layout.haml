@@ -2,8 +2,8 @@
 %html
   %head
     = partial "meta/base"
-    -# partial "meta/social"
     = partial "meta/mobile"
+    -# partial "meta/social"
     -# partial "meta/brand"
     = partial "meta/tricks"
 
@@ -11,8 +11,6 @@
 
     = stylesheet_link_tag "application"
     = stylesheet_link_tag  "hashgrid" if not build?
-
-    = partial "utils/oldie"
 
   %body{ class: "#{page_classes}" }
 

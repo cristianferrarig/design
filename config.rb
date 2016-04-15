@@ -18,9 +18,10 @@ end
 
 after_configuration do
   sprockets.append_path "#{root}/vendor/bower"
-  sprockets.append_path "#{root}/vendor/basekit/tools/stylesheets"
   sprockets.append_path "#{root}/vendor/basekit/assets/stylesheets"
   sprockets.append_path "#{root}/vendor/basekit/assets/javascripts"
+  sprockets.append_path "#{root}/vendor/basekit/tools/stylesheets"
+  sprockets.append_path "#{root}/vendor/basekit/ui/stylesheets"
 # sprockets.import_asset 'jquery'
 # sprockets.import_asset 'hashgrid'
 end
