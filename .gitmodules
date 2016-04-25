@@ -1,3 +1,0 @@
-[submodule "vendor/basekit"]
-	path = vendor/basekit
-	url = git@github.com:cristianferrarig/toolkit.git
