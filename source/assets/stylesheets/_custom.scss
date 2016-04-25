@@ -1,0 +1,32 @@
+//
+// COLORS
+//
+// 1. Tone color variables
+// 2. Brand color variables
+// 3. Semantic color variables
+//
+
+// 1. Tone variables
+
+$darkest-tone:     #142933;
+$darker-tone:      #375666;
+$dark-tone:        #7194A6;
+$light-tone:       #E6EEF2;
+$lighter-tone:     #F5F8FA;
+$lightest-tone:    #FFFFFF;
+
+// 2. Brand variables
+
+$brand-color:      #FF6A00;
+$accent-color:     $brand-color;
+$primary-color:    $darker-tone;
+$base-color:       $lighter-tone;
+$front-color:      $lighter-tone;
+$text-color:       $darkest-tone;
+$inverse-color:    $lightest-tone;
+
+// 3. Semantic colors
+
+$success-color:    #24B36B;
+$warning-color:    #FFBB27;
+$danger-color:     #C60025;
